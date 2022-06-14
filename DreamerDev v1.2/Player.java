@@ -130,10 +130,10 @@ public class Player extends GameObject implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e){
         miliseconds++;
-        if(miliseconds == 20){
+        if(miliseconds >= 20){
             seconds++;
             miliseconds = 0;
-            if(seconds == 60){
+            if(seconds >= 60){
                 minutes++;
                 seconds = 0;
             }
